@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# business-card-exchange# newProject
+>>>>>>> b5f1c9477676a6025c4666ae02fdc7c52c225533
