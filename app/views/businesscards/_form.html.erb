@@ -1,0 +1,28 @@
+<%= form_for (@businesscard) do |f| %>
+<div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+</div>
+<div>
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+</div>
+<div>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+<div>
+  <%= f.label :user_id %>
+  <%= f.text_field :user_id %>
+</div>
+<div>
+  <%= f.submit %>
+</div>
+<% end %>
+<p><%= link_to "Back to home page", businesscards_path %></p>
+
+

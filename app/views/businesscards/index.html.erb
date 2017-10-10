@@ -1,0 +1,23 @@
+<%= link_to "Add a businesscard", new_businesscard_url %>
+
+<h1>Your Businesscards</h1>
+<% @businesscards.where(user_id: current_user.id).each do |businesscard| %>
+  <div>
+    <p>Name: <%= businesscard.name %></p>
+    <h4>Title: <%= businesscard.title %></h4>
+    <h4>Phone: <%= businesscard.phone %></h4>
+    <h4>Email: <%= businesscard.email %></h4>
+    <h4>User_id: <%= businesscard.user_id %></h4>
+  </div>
+<% end %>
+
+<h1>Other Businesscards</h1>
+<% @businesscards.where.not(user_id: current_user.id).each do |businesscard| %>
+  <div>
+    <p><%= businesscard.name %></p>
+    <h4><%= businesscard.title %></h4>
+
+
+    <p><%= "By: #{businesscard.user.email}" %></p>
+  </div>
+<% end %>
