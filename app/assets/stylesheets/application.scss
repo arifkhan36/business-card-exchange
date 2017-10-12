@@ -10,10 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require_tree
  */
-h1{
+/*h1{
   color:red;
 }
 h2{
@@ -26,4 +26,46 @@ button{
 
 button:hover {
     opacity: 0.8;
+}*/
+/*body {
+    background-image: url("https://image.freepik.com/free-vector/modern-simple-business-card-template_1051-472.jpg");
+}
+*//*a{
+margin:0 180px;
+}
+*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#main-container {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.devise-container {
+  width: 345px;
+  padding-left: 15px;
+}
+
+.product-block {
+  width: 750px;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+th {
+  background-color: #333333;
+  color: white;
+}
+
+td {
+  background-color: #808080;
+  color: white;
 }

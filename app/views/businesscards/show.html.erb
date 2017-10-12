@@ -1,4 +1,6 @@
 <h1>
+   <%= image_tag @businesscard.image.url(:medium) %>
+
     <span>Name: <%=@businesscard.name %></span>
       <br>
       <span>Email: <%=@businesscard.email %></span>
@@ -7,5 +9,6 @@
         <br>
         <span>Title: <%=@businesscard.title%></span>
 
-
+<h3 class="businesscard"><%= link_to businesscard.name,businesscard_path(businesscard)%></h3>
 </h1>
+

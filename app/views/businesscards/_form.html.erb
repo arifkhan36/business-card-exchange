@@ -1,4 +1,9 @@
-<%= form_for (@businesscard) do |f| %>
+<%= form_for @businesscard, html: { multipart: true } do |f| %>
+<div>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+
+</div>
 <div>
   <%= f.label :name %>
   <%= f.text_field :name %>

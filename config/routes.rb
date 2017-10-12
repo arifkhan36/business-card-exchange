@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 root 'businesscards#index'
 # get '/welcome', to : 'welcome#index'
 resources :users
-resources :businesscards, only: [:index, :new, :create]
+resources :businesscards
 end
 

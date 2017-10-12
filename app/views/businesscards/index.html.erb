@@ -8,7 +8,11 @@
     <h4>Phone: <%= businesscard.phone %></h4>
     <h4>Email: <%= businesscard.email %></h4>
     <h4>User_id: <%= businesscard.user_id %></h4>
+    <img src="<%= businesscard.image %>" alt="">
   </div>
+<%= link_to "Update",   new_businesscard_path %>
+<%= link_to "Delete", businesscard_path(businesscard),method: :delete,
+data: {confirm: 'are you sure'} %>
 <% end %>
 
 <h1>Other Businesscards</h1>
