@@ -1,6 +1,5 @@
-<%= link_to "Add a businesscard", new_businesscard_url %>
-
-<h1>Your Businesscards</h1>
+<div class="card">
+<h1>Your BusinessCards</h1>
 <% @businesscards.where(user_id: current_user.id).each do |businesscard| %>
   <div>
     <h3>Name: <%= businesscard.name %></h3>
@@ -14,14 +13,6 @@
 <%= link_to "Delete", businesscard_path(businesscard),method: :delete,
 data: {confirm: 'are you sure'} %>
 <% end %>
-
-<h1>Other Businesscards</h1>
-<% @businesscards.where.not(user_id: current_user.id).each do |businesscard| %>
-  <div>
-    <p><%= businesscard.name %></p>
-    <h4><%= businesscard.title %></h4>
+</div>
 
 
-    <p><%= "By: #{businesscard.user.email}" %></p>
-  </div>
-<% end %>

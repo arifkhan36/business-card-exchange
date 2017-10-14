@@ -8,11 +8,23 @@
 </head>
 <body>
   <!-- <nav class="navbar navbar-inverse navbar-top navbar-fixed-top"> -->
-      <div class="container1">
-      <a class="navbar-brand" href="/">Home</a>
+    <nav>
+    <% if !current_user.nil? %>
+    <div id="status">
+    <p align="center">Signed in as <%= link_to current_user.email, edit_user_registration_path %></p>
+    </div>
+    <% else %>
+    <p></p>
+    <% end %>
+    </nav>
+    <div class="container">
+    <div class="jumbotron text-center">
+    <h1>BusinessCard App</h1>
+      <a class="btn btn-primary btn-sm" href="/" role="button">Home</a>
       <% if user_signed_in? %>
+        <%= link_to "Add Card", new_businesscard_url %>
         <%= link_to "Edit profile", edit_user_registration_path %>
-      <% else %>
+       <% else %>
         <%= link_to "Sign up", new_user_registration_path %>
         <%= link_to "Login", new_user_session_path %>
       <% end %>
@@ -20,9 +32,20 @@
         <%= link_to "Logout", destroy_user_session_path, method: :delete %>
       <% end %>
       </div>
+    </div>
   <!-- </nav> -->
   <div id="main-container" class="container">
     <%= yield %>
   </div>
+    <div class="col-lg-4 col-lg-offset-2 text-center">
+              <i class="glyphicon glyphicon-earphone"></i>
+              <i class="fa fa-phone fa-3x sr-contact"></i>
+              <p>631-746-5735</p>
+          </div>
+          <div class="col-lg-4 text-center">
+              <i class="glyphicon glyphicon-envelope"></i>
+              <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+              <p><a href="mailto:your-email@your-domain.com">mdakhan.com</a></p>
+          </div>
 </body>
 </html>

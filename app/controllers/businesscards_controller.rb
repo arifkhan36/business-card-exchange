@@ -29,11 +29,6 @@ class BusinesscardsController < ApplicationController
       end
     end
   end
-  # def update
-  #   @businesscard = Businesscard.find(params[:id])
-  #   @businesscard.update(businesscard_params)
-  #   redirect_to businesscard_path @businesscard
-  # end
   def destroy
     @businesscard.destroy
     respond_to do |format|
@@ -53,13 +48,3 @@ private
   end
 end
 
- # respond_to do |format|
- #      if @businesscard.save
- #        format.html { redirect_to @businesscard, notice:'Post was successfully created.'}
- #        format.json {render :show, status: :created, location:@businesscard}
- #        else
- #      format.html { render :new }
- #      format.json{ render json: @businesscard.errors, status: :unprocessable_entity }
- #     end
- #   end
- #  end

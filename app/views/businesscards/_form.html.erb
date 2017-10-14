@@ -1,33 +1,33 @@
 <%= form_for @businesscard, html: { multipart: true } do |f| %>
 <div>
-  <%= f.label :image %>
-  <%= f.file_field :image %>
-
+    <%= f.file_field :image %>
 </div>
+<div class="content">
 <div>
-  <%= f.label :name %>
+  <h3><%= f.label :name %></h3>
   <%= f.text_field :name %>
 </div>
 <div>
-  <%= f.label :email %>
+  <h4><%= f.label :email %></h4>
   <%= f.text_field :email %>
 </div>
 <div>
-  <%= f.label :phone %>
+  <h4><%= f.label :phone %></h4>
   <%= f.text_field :phone %>
 </div>
 <div>
-  <%= f.label :title %>
+  <h4><%= f.label :title %></h4>
   <%= f.text_field :title %>
 </div>
 <div>
-  <%= f.label :user_id %>
+  <h4><%= f.label :user_id %></h4>
   <%= f.text_field :user_id %>
 </div>
 <div>
-  <%= f.submit %>
+<h4><%= f.submit "Create Card" %></h4>
+</div>
 </div>
 <% end %>
-<p><%= link_to "Back to home page", businesscards_path %></p>
+
 
 
