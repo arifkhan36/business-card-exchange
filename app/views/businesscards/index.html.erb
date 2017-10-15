@@ -9,9 +9,9 @@
     <h4>User_id: <%= businesscard.user_id %></h4>
     <img src="<%= businesscard.image %>" alt="">
   </div>
-<%= link_to "Update", edit_businesscard_path(businesscard) %>
+<%= link_to "Update", edit_businesscard_path(businesscard),:class=> "btn btn-primary btn-md" %>
 <%= link_to "Delete", businesscard_path(businesscard),method: :delete,
-data: {confirm: 'are you sure'} %>
+data: {confirm: 'are you sure'},:class=> "btn btn-primary btn-md" %>
 <% end %>
 </div>
 

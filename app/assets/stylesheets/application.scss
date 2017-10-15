@@ -98,9 +98,24 @@ float:left;
 h1{
 text-shadow: 0px 4px 3px purple;
 }
- #main-container{
-    color:#510902;
+
+#main-container{
+    background-color:#e8edec;
 }
+.btn.btn-primary{
+background-color:#9b5714;
+// display: inline;
+// float:right;
+// margin:10px 120px;
+// display: flex;
+}
+
+
+//   {
+//   color:red;
+//   margin:0 10px;
+//   float:right;
+// }
 // .profile{
 //   background: url(http://www.peteryee.my/graphics/inspiringwell/fp_bc_1.jpg);
 // }
