@@ -19,3 +19,8 @@ The purpose of business card exchange is to conviniently organize the contacts y
 
 ## ERD table:
 ![](https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/ERD%20table.png)
+
+## User Stories:
+As a user, you can sign up a new account with minimal information. After sign up users can see their username top of the screen and their saving cards as well.Users can add their business cards using ADD Card button from top of the app and anytime users can update or delete their business card from the App.
+Another feature of the App, Users can upload their business card using choose file button from the App.After oplading their cards users can logout from any page and its a secure logout where another users can't see their saving information from others account. 
+
