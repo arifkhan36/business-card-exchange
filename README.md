@@ -31,6 +31,11 @@ Another feature of the App, Users can upload their business card using choose fi
 ## User Authentication:
 For the Authentication I used device authnentication, Devise is a flexible authentication solution for Rails based App and its a complete MVC solution for Rails.Devise allows you to have multiple models signed in at the same time.In this App, users can sign up using their email and password and can logout from any pages.
 
+## Paperclip for choosefile
+
+paperclip is an easy file attachment library for ActiveRecord.The intent behind it was to keep setup as easy as possible and to treat files as much like other attributes as possible. This means they aren't saved to their final locations on disk, nor are they deleted if set to nil, until ActiveRecord::Base#save is called.
+For the paperclip, ImageMagick must me installed and paperclip must have access to it.To ensure paperclip access we need to run command in our terminal.After that, it will give us the path so we can use imagemagick for our paperclip.
+
 
 
 
