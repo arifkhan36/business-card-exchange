@@ -18,4 +18,4 @@ The purpose of business card exchange is to conviniently organize the contacts y
 ![](https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/wireframes-4.png)
 
 ## ERD table:
-
+![](https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/ERD%20table.png)
