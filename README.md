@@ -11,4 +11,5 @@ The purpose of business card exchange is to conviniently organize the contacts y
 5) Ruby On Rails
 6) Bootstrap
 
-## 
+## Wireframes:
+(https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/wireframe1.png)
