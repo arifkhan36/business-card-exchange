@@ -12,4 +12,10 @@ The purpose of business card exchange is to conviniently organize the contacts y
 6) Bootstrap
 
 ## Wireframes:
-![]()
+![](https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/wireframe-1.png)
+![](https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/wireframes-2.png)
+![](https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/wireframes-3.png)
+![](https://github.com/arifkhan36/business-card-exchange/blob/master/app/assets/images/wireframes-4.png)
+
+## ERD table:
+
