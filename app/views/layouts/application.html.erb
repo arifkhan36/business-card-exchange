@@ -34,9 +34,19 @@
       </div>
     </div>
   <!-- </nav> -->
+  <!-- <div class="container"> -->
+  <div class="line">
+   <% if current_user.nil? %>
+     <h2>Keep track of all the people you meet and your business cards. </h2>
+     <h2>Have access to them where ever you go.</h2>
+    <% end %>
+  </div>
+      <!-- </div> -->
   <div id="main-container" class="container">
     <%= yield %>
   </div>
+
+
     <div class="col-lg-4 col-lg-offset-2 text-center">
               <i class="glyphicon glyphicon-earphone"></i>
               <i class="fa fa-phone fa-3x sr-contact"></i>
